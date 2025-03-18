@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as r}from"./chunks/framework.Dh1jimFm.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"course/CAD/week2.md","filePath":"course/CAD/week2.md"}'),a={name:"course/CAD/week2.md"};function o(s,c,n,p,_,d){return r(),t("div")}const f=e(a,[["render",o]]);export{m as __pageData,f as default};

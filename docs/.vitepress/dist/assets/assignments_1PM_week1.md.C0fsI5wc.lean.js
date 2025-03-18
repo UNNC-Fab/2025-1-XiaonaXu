@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as s}from"./chunks/framework.DcMgrPyM.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"assignments/1PM/week1.md","filePath":"assignments/1PM/week1.md"}'),a={name:"assignments/1PM/week1.md"};function n(r,o,c,i,m,p){return s(),t("div")}const f=e(a,[["render",n]]);export{d as __pageData,f as default};
