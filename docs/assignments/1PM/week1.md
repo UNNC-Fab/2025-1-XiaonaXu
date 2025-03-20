@@ -51,7 +51,6 @@ Before we begin, ensure you have the following installed:
    npm run docs:dev
    ```
    
-  Open your browser to http://localhost:5173 to see the default VitePress site.
 
 ## Step 2: Customizing the Site
 change the menu and add a side bar to your site by editing the `content.mts` file. Here's an example:
