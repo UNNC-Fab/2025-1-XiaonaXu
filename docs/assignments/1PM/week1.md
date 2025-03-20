@@ -5,7 +5,7 @@ title: Week 1 - Building a Project Management Website with VitePress
 
 # Week 1
 
-I used AI to help me generate the following content, this is the prompt:
+I used AI to help me generate the following content, this is the prompt for it:
 
 ```give me a script of a .mts/.md file, it should be a page about a tutorial building a website using vitepress for project management. it should include several contents: the title should be "week 1", several sections including introduction and steps. and this vitepress site is made via github
 ```
