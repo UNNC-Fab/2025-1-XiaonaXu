@@ -33,8 +33,8 @@ export default defineConfig({
       {
         text: 'Course',
         items: [
-          { text: 'Week 1: Project management', link: '/assignments/week1/' },
-          { text: 'Week 2: embedded programming', link: '/assignments/week2/' },
+          { text: 'Week 1: Project management', link: '/assignments/1PM/' },
+          { text: 'Week 2: embedded programming', link: '/assignments/EP/' },
           { text: 'Week 3: electronics design', link: '/assignments/week3/' },
           { text: 'Week 4: electronics production', link: '/assignments/week4/' },
           { text: 'Week 5: Input/Output device', link: '/assignments/week5/' },
