@@ -149,7 +149,7 @@ git push -u origin main
 **5.Enable GitHub Pages for your repository:**
 In your repository on GitHub, navigate to the "Settings" tab and scroll down to the "GitHub Pages" section. Select "Master branch" and click "Save."
 
-## Conclusion: known issues and solutiions:##
+## Conclusion: known issues and solutiions:
 
 # Next week:
 
