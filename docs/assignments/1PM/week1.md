@@ -29,3 +29,5 @@ install
 I followed the instructions on the official website to install git.
 then set up a new repository on GitHub.
 
+### step three: project clone
+
