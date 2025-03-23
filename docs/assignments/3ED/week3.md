@@ -29,4 +29,8 @@ Before designing, understand these key ideas:
 - **Ohm’s Law**: `V = I × R` – relates voltage, current, and resistance.
 - **Series vs. Parallel**: Components can be connected end-to-end (series) or side-by-side (parallel), affecting total resistance and current flow.
 
-In this practice we'll use LCEDA as an example to demonstrate the basic concepts of software aided electronics design
+In this practice we'll use LCEDA as an example to demonstrate the basic concepts of software aided electronics design, and use a circuit that controls two LED lights as an example.
+
+First, add the boards:
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153346002.png)
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153234233.png)
