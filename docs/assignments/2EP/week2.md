@@ -13,4 +13,24 @@ This is the basic layout
 ![Alt Text](https://files.seeedstudio.com/wiki/XIAO_WiFi/front-label-3.png)
 ![Alt Text](https://files.seeedstudio.com/wiki/XIAO_WiFi/back-label-6.png)
 ### steps
-install arduino ide
+Now we're going to learn how to do embedded programming using arduino. Here are the steps:
+
+#### Requirements
+To follow this tutorial, you’ll need:
+- An Arduino board (e.g., Seeed Studio XIAO ESP32C3)
+- A USB cable (usually Type-A to Type-B)
+- A computer with the Arduino IDE installed
+- An LED and sensors, we use an EMG sensor in this example
+- A breadboard and jumper wires (optional for external LED)
+
+#### Setting Up the Arduino IDE
+
+1. **Download the IDE**: Visit [arduino.cc](https://www.arduino.cc/en/software) and download the Arduino IDE for your operating system.
+2. **Install the IDE**: Follow the installation instructions for your OS.
+3. **Connect Your Arduino**: Plug your Arduino into your computer via the USB cable.
+4. **Select Your Board**: Open the IDE, go to `Tools > Board`, and select your Arduino model (e.g., Seeed Studio XIAO ESP32C3).
+5. **Select the Port**: Go to `Tools > Port` and choose the port your Arduino is connected
+
+
+
+
