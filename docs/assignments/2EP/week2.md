@@ -30,7 +30,8 @@ To follow this tutorial, you’ll need:
 3. **Connect Your Arduino**: Plug your Arduino into your computer via the USB cable.
 4. **Select Your Board**: Open the IDE, go to `Tools > Board`, and select your Arduino model (e.g., Seeed Studio XIAO ESP32C3).
 5. **Select the Port**: Go to `Tools > Port` and choose the port your Arduino is connected
-
-
+ 
+ basic layout:
+ ![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250323094240859.png)
 
 
