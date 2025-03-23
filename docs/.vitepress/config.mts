@@ -35,7 +35,7 @@ export default defineConfig({
         items: [
           { text: 'Week 1: Project management', link: '/assignments/1PM/week1.md' },
           { text: 'Week 2: embedded programming', link: '/assignments/2EP/week2.md' },
-          { text: 'Week 3: electronics design', link: '/assignments/week3' },
+          { text: 'Week 3: electronics design', link: '/assignments/3ED/week3.md' },
           { text: 'Week 4: electronics production', link: '/assignments/week4' },
           { text: 'Week 5: Input/Output device', link: '/assignments/week5/' },
           { text: 'Week 6: CAD', link: '/assignments/week6/' },

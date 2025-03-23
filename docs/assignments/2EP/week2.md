@@ -214,6 +214,9 @@ float Filter(float input) {
   return output;
 }
 ```
-This is the code fro the program
+This is the code for the program
+
+now start connecting, it should work
+
 
 
