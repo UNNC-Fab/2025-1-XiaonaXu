@@ -30,7 +30,17 @@ Before designing, understand these key ideas:
 - **Series vs. Parallel**: Components can be connected end-to-end (series) or side-by-side (parallel), affecting total resistance and current flow.
 
 In this practice we'll use LCEDA as an example to demonstrate the basic concepts of software aided electronics design, and use a circuit that controls two LED lights as an example.
+This is is a basic layout
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153204143.png)
 
 First, add the boards:
 ![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153346002.png)
 ![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153234233.png)
+make sure to mark out the specific labels to note where these pins would be connected to the components.
+
+Next, add the components:
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153326223.png)
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153454737.png)
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153414597.png)
+and connect the LEDS and resistors
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153440937.png)
