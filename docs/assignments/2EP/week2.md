@@ -123,4 +123,97 @@ float Filter(float input) {
 ```
 this is a string of code that will read the EMG signal from the sensor, filter it, and output it to the serial port. The code also includes a timer to send data at a fixed rate.
 
+now let's add a LED to the circuit and use it to indicate when the EMG signal is above a certain threshold.
+(I used AI to support me for this section, my prompt is to use the EMG signal to control the LED, copy and paste the code above and ask it modifiy it into a LED control program, using D9 for the LED pin and A0 for the EMG signal input pin)
+
+```#define SAMPLE_RATE 500        // 采样率
+#define BAUD_RATE 115200       // 串口波特率
+#define INPUT_PIN A0          // 信号输入
+#define DETECT_PIN 2          // 检测输入
+#define LED_PIN D9            // LED输出引脚（使用D9）
+#define Vref (1.65 / 5 * 1024) // 抬升电压
+#define THRESHOLD 500         // EMG信号阈值（可调整）
+
+// 窗口
+#define BUFFER_SIZE 128           // 窗口大小
+int circular_buffer[BUFFER_SIZE]; // 环形数组
+int data_index, sum;             // 数据索引
+  
+void setup() {
+  Serial.begin(BAUD_RATE);
+  pinMode(DETECT_PIN, INPUT);    // 设置DETECT_PIN为输入模式
+  pinMode(LED_PIN, OUTPUT);      // 设置LED_PIN为输出模式
+  digitalWrite(LED_PIN, LOW);    // 初始关闭LED
+}
+
+void loop() {
+  // 计算经过的时间
+  static unsigned long past = 0;
+  unsigned long present = micros();
+  unsigned long interval = present - past;
+  past = present;
+
+  static long timer = 0;
+  timer -= interval;
+
+  if (timer < 0) {
+    timer += 1000000 / SAMPLE_RATE;
+    int sensor_value = analogRead(INPUT_PIN);
+    int detect_value = digitalRead(DETECT_PIN);
+    int signal = Filter(sensor_value);
+    int emgRaw = signal - Vref;
+
+    // 根据EMG信号幅度控制LED
+    if (abs(emgRaw) > THRESHOLD) {
+      digitalWrite(LED_PIN, HIGH);  // EMG信号超过阈值时点亮LED
+    } else {
+      digitalWrite(LED_PIN, LOW);   // 低于阈值时关闭LED
+    }
+
+    // 串口输出保持不变
+    if (detect_value == HIGH) {
+      Serial.println(String(emgRaw) + "," + String(signal) + ",1");
+    } else {
+      Serial.println(String(emgRaw) + ",0,0");
+    }
+  }
+}
+
+/****************************滤波************************************/
+// Butterworth IIR Digital Filter: bandpass
+float Filter(float input) {
+  float output = input;
+  {
+    static float z1, z2;
+    float x = output - (-0.55195385 * z1) - (0.60461714 * z2);
+    output = 0.00223489 * x + (0.00446978 * z1) + (0.00223489 * z2);
+    z2 = z1;
+    z1 = x;
+  }
+  {
+    static float z1, z2;
+    float x = output - (-0.86036562 * z1) - (0.63511954 * z2);
+    output = 1.00000000 * x + (2.00000000 * z1) + (1.00000000 * z2);
+    z2 = z1;
+    z1 = x;
+  }
+  {
+    static float z1, z2;
+    float x = output - (-0.37367240 * z1) - (0.81248708 * z2);
+    output = 1.00000000 * x + (-2.00000000 * z1) + (1.00000000 * z2);
+    z2 = z1;
+    z1 = x;
+  }
+  {
+    static float z1, z2;
+    float x = output - (-1.15601175 * z1) - (0.84761589 * z2);
+    output = 1.00000000 * x + (-2.00000000 * z1) + (1.00000000 * z2);
+    z2 = z1;
+    z1 = x;
+  }
+  return output;
+}
+```
+This is the code fro the program
+
 
