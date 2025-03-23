@@ -28,3 +28,5 @@ Before designing, understand these key ideas:
 - **Resistance (R)**: Opposition to current flow, measured in ohms (Ω).
 - **Ohm’s Law**: `V = I × R` – relates voltage, current, and resistance.
 - **Series vs. Parallel**: Components can be connected end-to-end (series) or side-by-side (parallel), affecting total resistance and current flow.
+
+In this practice we'll use LCEDA as an example to demonstrate the basic concepts of software aided electronics design
