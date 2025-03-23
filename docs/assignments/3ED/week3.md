@@ -44,3 +44,16 @@ Next, add the components:
 ![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153414597.png)
 and connect the LEDS and resistors
 ![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153440937.png)
+
+Connect all components, it should look like this:
+![ALt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153545818.png)
+ 
+ Now start viewing it in the PCB mode of the software:
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153758012.png)
+connect them according to the sketch, leave the ground pins
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153707014.png)
+now connect the ground pins, it should be completed automatically
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/20250320153617545.png)
+
+This software also allows you to send this PCB file to it's servers and they'll process and manufacture it for you. Now we can use it for further experiments
+![Alt Text](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/IMG_5871.JPG)
