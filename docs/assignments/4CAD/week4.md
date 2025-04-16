@@ -21,7 +21,7 @@ Cloud simulation and advanced machining upgrades
 ## How to
 Here is an actual practice of using Autodesk Fusion for CAD:
 First, create sketch
-![Alt Text](![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-16%20101258.png))
+![Alt Text](![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-16%20101355.png))
 After creating this sketch, use the revolve command to create a 3D shape
 ![Alt Text](![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/xxn/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-16%20101321.png))
 now, use the same way, create another object
