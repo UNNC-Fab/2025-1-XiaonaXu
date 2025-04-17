@@ -149,7 +149,7 @@ git push -u origin main
 In your repository on GitHub, navigate to the "Settings" tab and scroll down to the "GitHub Pages" section. Select "Master branch" and click "Save."
 
 ## Conclusion: known issues and solutiions:
-
+In some cases, during the local preview stage error message like 404, or even worse the request is blocked, to solve this you can update your PC's system. or you can just ignore this issue and keep building the website, and finally push it to github
 # Next week:
 
 In the next week you'll learn using arduino for embedded programing and design. Stay tuned
